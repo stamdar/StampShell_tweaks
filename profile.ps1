@@ -262,3 +262,6 @@ function Prompt {
 
     return " "
 }
+
+# --- Print banner at startup ---
+Clear-And-Banner -ErrorAction SilentlyContinue
