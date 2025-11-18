@@ -253,7 +253,7 @@ function Clear-And-Banner {
     Get-Date
     Write-Output $hnStr
     Write-Output $ipStr
-    Write-Host $pubStr
+    Write-Host $pubStr -NoNewline
 }
 
 function Add-Path {
