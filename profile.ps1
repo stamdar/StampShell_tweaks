@@ -241,7 +241,7 @@ function Clear-And-Banner {
     try {
         $resp = Invoke-WebRequest "https://ifconfig.me/ip" -UseBasicParsing -TimeoutSec 3
         if ($resp -and $resp.Content) {
-            $pubStr = "Public IP: " + $resp.Content.Trim() + "\n"
+            $pubStr = "Public IP: " + $resp.Content.Trim()
         }
     } catch { }
 
@@ -253,7 +253,7 @@ function Clear-And-Banner {
     Get-Date
     Write-Output $hnStr
     Write-Output $ipStr
-    Write-Host $pubStr -NoNewline
+    Write-Host $pubStr
 }
 
 function Add-Path {
